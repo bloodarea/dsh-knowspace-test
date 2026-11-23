@@ -1,0 +1,12 @@
+{
+  "changeId": "1fba595a-8c06-4559-94d3-bdde28cfdf03-3",
+  "deviceId": "1fba595a-8c06-4559-94d3-bdde28cfdf03",
+  "assetId": "第一篇.md",
+  "path": "第一篇.md",
+  "kind": "put",
+  "contentHash": "5aa41b3b53cf9dd0ac8151629c7a9015524f19b7bc8723eaaa9fc8777167962b",
+  "size": 58,
+  "baseVersion": "2162a0bb70711b6bf2e588910861ee18c85b86788cba69d383815673b921bfe8",
+  "timestamp": "2026-11-23T14:57:04.650Z",
+  "protocolVersion": 1
+}
