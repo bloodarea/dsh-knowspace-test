@@ -1,0 +1,129 @@
+# 一级标题 渲染验收夹具
+
+## 二级标题：中文与西文混排
+
+这是一段较长的中文段落，用来观察 **加粗**、*斜体*、~~删除线~~ 与 `行内代码` 在 620–840px
+侧栏里的折行与行高表现；中英文之间不人为插入空格。Western text should wrap naturally,
+and long URLs like https://example.com/a/very/long/path?with=query&and=more should not break the
+layout. 段落里还有行内公式 $E=mc^2$ 与另一处 \(\alpha+\beta=\gamma\)，以及一个行内代码 `$not math$`
+用来确认行内代码里的美元符号不会被当成数学。
+
+### 三级标题：列表与任务
+
+- 无序列表第一项
+- 无序列表第二项，含行内公式 $a^2+b^2=c^2$
+  - 嵌套列表 A
+  - 嵌套列表 B，再嵌一层
+    - 第三层
+- [x] 已完成任务项（预览里只读）
+- [ ] 未完成任务项
+
+1. 有序第一项
+2. 有序第二项
+3. 有序第三项
+
+#### 四级标题：引用与分隔线
+
+> 引用块里也可以有公式 $x \in \mathbb{R}$，以及次要文字色。
+> 第二行引用，确认左边线与内距。
+
+---
+
+##### 五级标题：表格
+
+| 列一（较长中文表头） | 列二 | 列三 | 说明 |
+|:--|:-:|--:|---|
+| 中文内容 | 42 | 3.14 | 顶端对齐，普通中文允许换行 |
+| 一段较长的中文字符串用来把列撑开，观察局部横向滚动 | 7 | 2.71828 | 表格容器局部横滚，不撑宽整个侧栏 |
+| `$` 美元符号在单元格里 | 0 | 1 | 单元格里的 $ 不当数学 |
+
+###### 六级标题：代码块
+
+```ts
+// 长代码行不强行断行，只在代码块内局部横滚
+export function renderMarkdown(text: string, context: { workspaceId: string; notePath: string }, registry: unknown) {
+  return { nodes: [], diagnostics: [], mode: 'rich' as const }
+}
+```
+
+```knowspace-math
+\begin{aligned}
+\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
+\nabla \times \vec{B} &= \mu_0 \vec{J}
+\end{aligned}
+```
+
+```weird-language
+未知语言围栏：回退普通代码块，保留语言标签与完整源码。
+```
+
+```knowspace-html
+<script>window.__ksFixtureXss = 1</script>
+<iframe srcdoc="<script>window.__ksFixtureXss = 2</script>"></iframe>
+<div onmouseover="window.__ksFixtureXss = 3">交互 HTML 源码</div>
+```
+
+## 数学：四种分隔符与边界
+
+行内 `$...$`：$x_i^2 + y_j^2 = r^2$；行内 `\(...\)`：\(\sum_{k=1}^{n} k = \frac{n(n+1)}{2}\)。
+
+块级 `$$...$$`：
+
+$$
+\int_{0}^{\infty} e^{-x^2}\,\mathrm{d}x = \frac{\sqrt{\pi}}{2}
+$$
+
+块级 `\[...\]`：
+
+\[
+\begin{pmatrix} a & b \\ c & d \end{pmatrix}
+\begin{pmatrix} x \\ y \end{pmatrix}
+=
+\begin{pmatrix} ax+by \\ cx+dy \end{pmatrix}
+\]
+
+超长块公式（应局部横向滚动，不缩放、不裁切）：
+
+$$
+\mathcal{F}\{f\}(\omega) = \int_{-\infty}^{+\infty} f(t)\,e^{-2\pi i \omega t}\,\mathrm{d}t
+= \int_{-\infty}^{+\infty} f(t)\bigl(\cos(2\pi\omega t) - i\sin(2\pi\omega t)\bigr)\,\mathrm{d}t
+= A(\omega) + iB(\omega) + C(\omega) + iD(\omega) + E(\omega) + iF(\omega) + G(\omega) + iH(\omega)
++ \sum_{n=1}^{\infty} \frac{(-1)^{n}}{2n-1} \Bigl( \cos((2n-1)\omega) + i\sin((2n-1)\omega) \Bigr)
+$$
+
+非法公式（应显示原文 + 提示，不白屏）：$\frac{$ 与 $\unknowncommand{x}$
+
+货币不误判：价格 $5、$10.00、US$20 保持文本；数字数学请写 \(5\) 或 $$5$$。
+
+## 长数字表格（P2-2 修复验证：数字/标识符不得被拆断）
+
+| 指标 | 数值 | 长数字 | 标识符 | 更长的数字列 | 版本与时间戳 |
+|:--|--:|--:|:--|--:|:--|
+| 拆断回归样例 | 7.271828 | 1234567.89 | abc_def_ghi_jkl | 1234567890.123456 | 2026-10-11T18:52:00.123Z |
+| 千分位与小数 | 1,234,567.89 | 0.000123456 | render_markdown_kernel | 0.000000000123456 | 0.2.0-rc.2+20261011 |
+| 中文与数字混排 | 第 7.271828 项 | 2026-10-11T18:52:00 | knowspace_html_block | 9876543210.987654 | build-110376-18:51:29 |
+
+## 行内复制入口不得断句（P2-1 修复验证）
+
+这是一句连续的中文句子，中间有一个行内公式 $x^2$，后面还要继续写下去以证明复制入口没有把这一句断开成两行；
+再来一次：$lpha+eta$ 之后仍然在同一段落里继续中文，句子不会被复制按钮顶到下一行。
+
+## 链接与图片
+
+- 同库相对笔记链接：[同目录另一篇](round4-sibling.md)
+- 外部链接：[example.com](https://example.com/path)
+- 危险协议（应显示"链接已阻止"且不可点击）：[javascript](javascript:alert(1))
+- 相对图片（同库，应正常加载）：![夹具图片](round4-fixture.png)
+- 失败图片（同库不存在）：![不存在的图片](round4-missing.png)
+- 越界图片（渲染器层禁止）：![越界](../secret.png)
+- 外部图片（默认不联网）：![外域](https://example.com/track.png)
+
+## 原始 HTML（html:false，应显示为文本）
+
+<script>window.__ksFixtureXss = 4</script>
+
+<img src=x onerror="window.__ksFixtureXss = 5">
+
+<svg onload="window.__ksFixtureXss = 6"></svg>
+
+<div style="position:fixed;top:0">原始 HTML 标签</div>
