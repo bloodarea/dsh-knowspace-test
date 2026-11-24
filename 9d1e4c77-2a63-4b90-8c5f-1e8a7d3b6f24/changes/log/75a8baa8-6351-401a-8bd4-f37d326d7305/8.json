@@ -1,0 +1,12 @@
+{
+  "changeId": "75a8baa8-6351-401a-8bd4-f37d326d7305-8",
+  "deviceId": "75a8baa8-6351-401a-8bd4-f37d326d7305",
+  "assetId": "冲突测试2.md",
+  "path": "冲突测试2.md",
+  "kind": "put",
+  "contentHash": "b3c301336dc034c0673b52b599fd3dd443fdcd845529ce10ae41b5e52289a2b6",
+  "size": 189,
+  "baseVersion": "efb0014b8e86614f8a6f9d676b16ed5f6edb61f239f0f23c473b29589eba03d0",
+  "timestamp": "2026-11-24T15:25:18.805Z",
+  "protocolVersion": 1
+}
