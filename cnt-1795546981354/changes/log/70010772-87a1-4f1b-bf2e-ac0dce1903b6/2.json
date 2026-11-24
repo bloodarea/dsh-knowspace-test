@@ -1,0 +1,12 @@
+{
+  "changeId": "70010772-87a1-4f1b-bf2e-ac0dce1903b6-2",
+  "deviceId": "70010772-87a1-4f1b-bf2e-ac0dce1903b6",
+  "assetId": "note.md",
+  "path": "note.md",
+  "kind": "put",
+  "contentHash": "8abd09a3516d92ed7cf92fd2f2bca9f7dfd3956e533ab482f554208f51efc803",
+  "size": 12,
+  "baseVersion": "61629605a12a1c6a65c17f879ed70aca88010a02627c37b2dbf05273b327baca",
+  "timestamp": "2026-11-24T19:03:46.079Z",
+  "protocolVersion": 1
+}
