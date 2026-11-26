@@ -1,0 +1,12 @@
+{
+  "changeId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65-28",
+  "deviceId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65",
+  "assetId": "attack-test.md",
+  "path": "attack-test.md",
+  "kind": "put",
+  "contentHash": "54d7df5d48b4bef466e801c6142880ff8915f52f86ec1ef0eebbc72c5ae18977",
+  "size": 47,
+  "baseVersion": "21cb382c28962dbb3116e25209e79fed00ce976e99f692d24caa83355a3a33d2",
+  "timestamp": "2026-11-26T15:19:56.799Z",
+  "protocolVersion": 1
+}
