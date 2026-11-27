@@ -1,0 +1,14 @@
+{
+  "changeId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65-59",
+  "deviceId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65",
+  "assetId": "round4-fixture/round4-overlimit.md",
+  "path": "round4-fixture/round4-overlimit.md",
+  "kind": "put",
+  "contentHash": "5747122e36289a39af05e33455be84998e9146dfdd108834c22b43c65be8ca62",
+  "size": 270000,
+  "manifest": "f065adcc4984bc64aa3cd9d12825506f11c16e8f7a3244d348c8256fbc8bd86f",
+  "chunks": 2,
+  "baseVersion": "cafcbf118d22d4f86fa5019c629f2dff4a90f1c8351ead7ef7d90819cff47a8c",
+  "timestamp": "2026-11-27T13:24:41.309Z",
+  "protocolVersion": 1
+}
