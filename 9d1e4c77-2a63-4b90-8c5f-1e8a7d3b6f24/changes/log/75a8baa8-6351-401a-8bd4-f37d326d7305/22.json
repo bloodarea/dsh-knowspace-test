@@ -1,0 +1,12 @@
+{
+  "changeId": "75a8baa8-6351-401a-8bd4-f37d326d7305-22",
+  "deviceId": "75a8baa8-6351-401a-8bd4-f37d326d7305",
+  "assetId": "时序测试1.md",
+  "path": "时序测试1.md",
+  "kind": "put",
+  "contentHash": "587faf0c4e451b2c284073f4b3d5bd68811b41230fb221db8b02656cfc119739",
+  "size": 26,
+  "baseVersion": "3becd6db563cfb13623863724254e597ea4cb19e8c8c1ca1c72b2f776b138ae5",
+  "timestamp": "2026-11-27T02:56:00.285Z",
+  "protocolVersion": 1
+}
