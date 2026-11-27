@@ -1,5 +1,16 @@
 {
   "vaultId": "3b7c9e21-5d4a-4c8e-9f1a-7b2d6e8c0a13",
   "protocolVersion": 1,
-  "createdAt": "2026-11-23T15:02:51.547Z"
+  "createdAt": "2026-11-23T15:02:51.547Z",
+  "encryption": {
+    "algo": "aes-256-gcm",
+    "salt": "33alqpq9JycBG3XfhidjeQ==",
+    "kdf": {
+      "name": "scrypt",
+      "n": 16384,
+      "r": 8,
+      "p": 1
+    },
+    "keyCheck": "3673badef08c8f781eb46af97f7e5864"
+  }
 }
