@@ -1,0 +1,12 @@
+{
+  "changeId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65-61",
+  "deviceId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65",
+  "assetId": "second.md",
+  "path": "second.md",
+  "kind": "put",
+  "contentHash": "2210d8ba858a44bc590901fb98c0e156f0a2302c11eacf0d3d6b66472f59bf33",
+  "size": 13,
+  "baseVersion": "0fe14aa479bbfd3c6d8a692b6befcf846b931dd1ee0c480bfa58b24a8fcb3ce0",
+  "timestamp": "2026-11-27T13:24:52.859Z",
+  "protocolVersion": 1
+}
