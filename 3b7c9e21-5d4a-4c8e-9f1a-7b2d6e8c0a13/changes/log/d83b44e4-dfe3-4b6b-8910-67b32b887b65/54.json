@@ -1,0 +1,12 @@
+{
+  "changeId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65-54",
+  "deviceId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65",
+  "assetId": "refresh-loop.md",
+  "path": "refresh-loop.md",
+  "kind": "put",
+  "contentHash": "92b79cf5ba8683326cbdab39af69a4a21d4e946888b30932c2d9244f1c98b561",
+  "size": 102,
+  "baseVersion": "edc67b7902a2258d15fba948aea150cbe8fa6dcd02be27f60fba03fe4f00a857",
+  "timestamp": "2026-11-27T13:24:05.764Z",
+  "protocolVersion": 1
+}
