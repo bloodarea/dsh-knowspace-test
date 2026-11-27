@@ -1,0 +1,12 @@
+{
+  "changeId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65-55",
+  "deviceId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65",
+  "assetId": "round2-live.md",
+  "path": "round2-live.md",
+  "kind": "put",
+  "contentHash": "11d3dc3b37d11cab560b4c45a705c07c89afa41cb9daf211b5869fc0dd42caab",
+  "size": 52,
+  "baseVersion": "dc346ee56a6349cc54b4a658c12eb2bd1ef5c8cd15f53ed61e2b1763082511de",
+  "timestamp": "2026-11-27T13:24:11.161Z",
+  "protocolVersion": 1
+}
