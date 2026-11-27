@@ -1,0 +1,12 @@
+{
+  "changeId": "75a8baa8-6351-401a-8bd4-f37d326d7305-28",
+  "deviceId": "75a8baa8-6351-401a-8bd4-f37d326d7305",
+  "assetId": "增量测试.md",
+  "path": "增量测试.md",
+  "kind": "put",
+  "contentHash": "bdeb940fbf1a09aaedc4fae766a5f3a3871d7a2a49f84183c95b5f77de2959ef",
+  "size": 92,
+  "baseVersion": "bdeb940fbf1a09aaedc4fae766a5f3a3871d7a2a49f84183c95b5f77de2959ef",
+  "timestamp": "2026-11-27T03:01:02.710Z",
+  "protocolVersion": 1
+}
