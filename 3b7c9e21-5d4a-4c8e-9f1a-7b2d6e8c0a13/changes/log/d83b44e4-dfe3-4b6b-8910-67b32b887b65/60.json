@@ -1,0 +1,12 @@
+{
+  "changeId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65-60",
+  "deviceId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65",
+  "assetId": "round4-fixture/round4-sibling.md",
+  "path": "round4-fixture/round4-sibling.md",
+  "kind": "put",
+  "contentHash": "f45dca9b025673a17c0cab4853889cbe442094ce74d8dbac8c03d89a89fa3e4c",
+  "size": 98,
+  "baseVersion": "2b20c83f3e35413d713dee11db1e08ec139a9d234aaeb4895e882c3a344253ef",
+  "timestamp": "2026-11-27T13:24:46.908Z",
+  "protocolVersion": 1
+}
