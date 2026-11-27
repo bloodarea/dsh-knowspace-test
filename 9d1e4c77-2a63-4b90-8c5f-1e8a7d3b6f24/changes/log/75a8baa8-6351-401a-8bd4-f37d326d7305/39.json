@@ -1,0 +1,14 @@
+{
+  "changeId": "75a8baa8-6351-401a-8bd4-f37d326d7305-39",
+  "deviceId": "75a8baa8-6351-401a-8bd4-f37d326d7305",
+  "assetId": "增量验收长文.md",
+  "path": "增量验收长文.md",
+  "kind": "put",
+  "contentHash": "283d7dfdc2fed477818aeee1934612665c9bf1da04401f864fdd93cbcd8c1a77",
+  "size": 520960,
+  "manifest": "cf649870e1cd35f823fd4439b4787bc3158941d84280dc2966658208013e1b1a",
+  "chunks": 1,
+  "baseVersion": "7cd4900140aef0e7bc2f66e365e6185ad1df01f5c0cc7c253801063aecfdb649",
+  "timestamp": "2026-11-27T03:12:51.554Z",
+  "protocolVersion": 1
+}
