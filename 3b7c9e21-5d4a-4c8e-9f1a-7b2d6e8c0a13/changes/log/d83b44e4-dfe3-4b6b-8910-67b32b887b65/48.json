@@ -1,0 +1,12 @@
+{
+  "changeId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65-48",
+  "deviceId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65",
+  "assetId": "hello.md",
+  "path": "hello.md",
+  "kind": "put",
+  "contentHash": "8973249a57aef3e3ac12ced1bf580f4be0129ed544b362d4957376b13c8f7b31",
+  "size": 328,
+  "baseVersion": "f9b7aaa4f627c776a2847d0066ad91a1a07c2a6a8908c3cdf0351089c1a86def",
+  "timestamp": "2026-11-27T13:23:29.271Z",
+  "protocolVersion": 1
+}
