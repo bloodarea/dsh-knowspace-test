@@ -1,0 +1,12 @@
+{
+  "changeId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65-44",
+  "deviceId": "d83b44e4-dfe3-4b6b-8910-67b32b887b65",
+  "assetId": "diff-demo2.md",
+  "path": "diff-demo2.md",
+  "kind": "put",
+  "contentHash": "f72ae8a0f14bfa84847751efdfbb92b1bbb8d8b04d4612598c74dafbe3853434",
+  "size": 66,
+  "baseVersion": "4bb860ff0dd5a88fcb5d9d71cfeb494d005a6ab35ddda3769c81905c1c7e720f",
+  "timestamp": "2026-11-27T13:23:03.816Z",
+  "protocolVersion": 1
+}
